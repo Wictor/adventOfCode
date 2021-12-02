@@ -4,7 +4,7 @@ using adventOfCode;
 
 namespace AdventOfCode.day1
 {
-    public static class day1
+    public static class Code
     {
         public static void oneDataCounter()
         {

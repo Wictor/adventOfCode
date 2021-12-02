@@ -7,10 +7,10 @@ namespace AdventOfCode {
         static void Main(string[] args) {
               
             // Day1 - Part 1
-            day1.day1.oneDataCounter();
+            day1.Code.oneDataCounter();
             
             // Day1 - Part 2
-            day1.day1.threeDataCounter();
+            day1.Code.threeDataCounter();
             
         }
     }
