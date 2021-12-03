@@ -1,25 +1,26 @@
 ﻿using System;
+using System.IO;
 
 namespace AdventOfCode {
       
     class Program {
           
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
+            var basePath = "../../../Inputs/";
               
-            /* DAY 1 */
-            // Day1 - Part 1
-            //day1.Code.Part1Counter();
-            
-            // Day1 - Part 2
-            // day1.Code.Part2Counter();
+            // Solutions.Day01.PartOne(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
+            // Solutions.Day01.PartTwo(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
             
             /* DAY 2 */
             // Day2 - Part 1
             //day2.Code.Part1Counter();
             
             // Day2 - Part 2
-            day2.Code.Part2Counter();
+            //day2.Code.Part2Counter();
             
+            // Day 3 - Part §
+            day3.Code.PowerConsumption();
         }
     }
 }

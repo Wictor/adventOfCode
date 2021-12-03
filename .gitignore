@@ -2,3 +2,4 @@
 .DS_Store
 AdventOfCode/bin/
 AdventOfCode/obj/
+global.json
