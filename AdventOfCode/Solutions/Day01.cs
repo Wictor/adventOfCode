@@ -13,10 +13,7 @@ namespace AdventOfCode.Solutions
             
             for (var i = 1; i < intInput.Count(); i++)
             {
-                if (intInput[i] > intInput[i - 1])
-                {
-                    increments += 1;
-                } 
+                increments = intInput[i] > intInput[i - 1] ? increments + 1 : increments;
             }
 
             Console.WriteLine(increments);
@@ -31,10 +28,8 @@ namespace AdventOfCode.Solutions
             {
                 var firstSum = intInput[i] + intInput[i + 1] + intInput[i + 2];
                 var secondSum = intInput[i + 1] + intInput[i + 2] + intInput[i + 3];
-                if (firstSum < secondSum)
-                {
-                    increments += 1;
-                }
+                
+                increments = firstSum < secondSum ? increments + 1 : increments;
             }
 
             Console.WriteLine(increments);

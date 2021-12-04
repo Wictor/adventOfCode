@@ -8,22 +8,18 @@ namespace AdventOfCode {
         static void Main(string[] args)
         {
             const string basePath = "../../../Inputs/";
-              
+            
+            /* DAY 1 */
             // Solutions.Day01.PartOne(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
             // Solutions.Day01.PartTwo(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
             
             /* DAY 2 */
-            // Day2 - Part 1
-            //day2.Code.Part1Counter();
+            // Solutions.Day02.PartOne(File.ReadAllLines(Path.Combine(basePath, "02.txt")));
+            // Solutions.Day02.PartTwo(File.ReadAllLines(Path.Combine(basePath, "02.txt")));
             
-            // Day2 - Part 2
-            //day2.Code.Part2Counter();
-            
-            // Day 3 - Part 1
-            // day3.Code.PowerConsumption();
-            
-            // Day 3 - Part 2
-            day3.Code.LifeSupport();
+            /* DAY 3 */
+            // Solutions.Day03.PartOne(File.ReadAllLines(Path.Combine(basePath, "03.txt")));
+            // Solutions.Day03.PartTwo(File.ReadAllLines(Path.Combine(basePath, "03.txt")));
         }
     }
 }
