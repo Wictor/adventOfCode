@@ -1,8 +1,7 @@
 using System;
-using System.IO;
 using System.Linq;
 
-namespace AdventOfCode.Solutions
+namespace AdventOfCode._2021.Solutions
 {
     public class Day02
     {
