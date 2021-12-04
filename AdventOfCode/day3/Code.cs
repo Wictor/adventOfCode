@@ -5,89 +5,58 @@ using System.Linq;
 
 namespace AdventOfCode.day3
 {
-    public class Code
+    public static class Code
     {
+        private const string Path = "../../../day3/data.txt";
+        
         public static void PowerConsumption()
         {
-            var path = "../../../day3/data.txt";
-            var data = File.ReadLines(path);
+            var data = File.ReadAllLines(Path);
+            
+            int gamma = 0;
+            int epsilon = 0;
+            
+            for (var i = 0; i < data[0].Length; i++)
+            {
+                var ones = data.Count(s => s.Substring(i,1) == "1");
+                var zeros = data.Count(s => s.Substring(i, 1) == "0");
 
-            var test = new List<KeyValuePair<int, string>>();
-            KeyValuePair<int,string> = new KeyValuePair<string,string>(dialedno, line);
+                gamma = gamma * 2 + (ones > zeros ? 1 : 0);
+                epsilon = epsilon * 2 + (ones < zeros ? 1 : 0);
+            }
+            
+            Console.WriteLine(gamma * epsilon);
+        }
+        
+        public static void LifeSupport()
+        {
+            var data = File.ReadAllLines(Path);
+            var o2Rating = IterateData(data, "1", "0");
+            var co2Rating = IterateData(data, "0", "1");
 
-            foreach (var lines in data)
+            Console.WriteLine(o2Rating * co2Rating);
+        }
+        
+        
+        private static int IterateData(string[] data, string primary, string secondary)
+        {
+            string[] rating = data;
+            for (var i = 0; i < data[0].Length; i++)
             {
-                for (int i = 0; i < lines.ToCharArray().Length; i++)
+                var ones = rating.Count(s => s.Substring(i, 1) == "1");
+                var zeros = rating.Count(s => s.Substring(i, 1) == "0");
+                string mostCommonCharacter = ones >= zeros ? primary : secondary;
+                
+                rating = rating.Where(s => s.Substring(i, 1) == mostCommonCharacter).ToArray();
+
+                if (rating.Length == 1)
                 {
-                    test.Add(i, lines[i].ToString());
+                    break;
                 }
+                
             }
-            
-            Console.Write(test.Keys);
-            
-            /*
-            // var firstRow = "";
-            var secondRow = "";
-            var thirdRow = "";
-            var fourthRow = "";
-            var fifthRow = "";            
-            var sixthRow = "";
-            var seventhRow = "";
-            var eightRow = "";
-            var ninethRow = "";
-            var tenthRow = "";
-            var elevnthRow = "";
-            
-            foreach (var eachRow in data)
-            {
-                firstRow += eachRow.Substring(0, 1);
-                secondRow += eachRow.Substring(1, 1);
-                thirdRow += eachRow.Substring(2, 1);
-                fourthRow += eachRow.Substring(3, 1);
-                fifthRow += eachRow.Substring(4, 1);
-                sixthRow += eachRow.Substring(5, 1);
-                seventhRow += eachRow.Substring(6, 1);
-                eightRow += eachRow.Substring(7, 1);
-                ninethRow += eachRow.Substring(8, 1);
-                tenthRow += eachRow.Substring(9, 1);
-                elevnthRow += eachRow.Substring(10, 1);
-            }
-            
-            Console.WriteLine("First row: " + firstRow);
-            Console.WriteLine("Second row: " + secondRow);
-            Console.WriteLine("Third row: " + thirdRow);
-            Console.WriteLine("Fourth row: " + fourthRow);
-            Console.WriteLine("Fifth row: " + fifthRow);
-            Console.WriteLine("Sixth row: " + sixthRow);
-            Console.WriteLine("Seventh row: " + seventhRow);
-            Console.WriteLine("Eighth row: " + eightRow);
-            Console.WriteLine("Nineth row: " + ninethRow);
-            Console.WriteLine("Tenth row: " + tenthRow);
-            Console.WriteLine("Elevent row: " + elevnthRow);
-            
-            */
-            /*
-            var query = File.ReadLines(path).GroupBy(line => line.FirstOrDefault());
-            var gamma = 0;
-            var epsilon = 0;
-            
-            if (!String.IsNullOrEmpty(path))
-            {
-                foreach (var character in query)
-                {
-                    if (character.Key.ToString() == "1")
-                    {
-                        gamma = character.Count();
-                    }
-                    else
-                    {
-                        epsilon = character.Count();
-                    }
-                }
-            }
-            */
-            
-            // Console.Write($"Power consumption: " + gamma * epsilon);   
+
+            return Convert.ToInt32(rating[0], 2);
         }
     }
 }

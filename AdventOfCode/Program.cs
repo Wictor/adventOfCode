@@ -7,7 +7,7 @@ namespace AdventOfCode {
           
         static void Main(string[] args)
         {
-            var basePath = "../../../Inputs/";
+            const string basePath = "../../../Inputs/";
               
             // Solutions.Day01.PartOne(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
             // Solutions.Day01.PartTwo(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
@@ -19,8 +19,11 @@ namespace AdventOfCode {
             // Day2 - Part 2
             //day2.Code.Part2Counter();
             
-            // Day 3 - Part §
-            day3.Code.PowerConsumption();
+            // Day 3 - Part 1
+            // day3.Code.PowerConsumption();
+            
+            // Day 3 - Part 2
+            day3.Code.LifeSupport();
         }
     }
 }
