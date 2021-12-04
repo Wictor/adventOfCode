@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using AdventOfCode._2021.Helper;
 
 namespace AdventOfCode._2021 {
       
@@ -6,19 +7,7 @@ namespace AdventOfCode._2021 {
           
         static void Main(string[] args)
         {
-            const string basePath = "../../../2021/Inputs/";
-            
-            /* DAY 1 */
-            Solutions.Day01.PartOne(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
-            Solutions.Day01.PartTwo(File.ReadAllLines(Path.Combine(basePath, "01.txt")));
-            
-            /* DAY 2 */
-            Solutions.Day02.PartOne(File.ReadAllLines(Path.Combine(basePath, "02.txt")));
-            Solutions.Day02.PartTwo(File.ReadAllLines(Path.Combine(basePath, "02.txt")));
-            
-            /* DAY 3 */
-            Solutions.Day03.PartOne(File.ReadAllLines(Path.Combine(basePath, "03.txt")));
-            Solutions.Day03.PartTwo(File.ReadAllLines(Path.Combine(basePath, "03.txt")));
+            Runner.PuzzleSelector(01, 1);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace AdventOfCode._2021.Solutions
 {
     public class Day03
     {
-        public static void PartOne(string[] data)
+        public static string PartOne(string[] data)
         {
             int gamma = 0;
             int epsilon = 0;
@@ -19,15 +19,15 @@ namespace AdventOfCode._2021.Solutions
                 epsilon = epsilon * 2 + (ones < zeros ? 1 : 0);
             }
             
-            Console.WriteLine(gamma * epsilon);
+            return (gamma * epsilon).ToString();
         }
 
-        public static void PartTwo(string[] data)
+        public static string PartTwo(string[] data)
         {
             var o2Rating = IterateData(data, "1", "0");
             var co2Rating = IterateData(data, "0", "1");
 
-            Console.WriteLine(o2Rating * co2Rating);
+            return (o2Rating * co2Rating).ToString();
         }
         
         private static int IterateData(string[] data, string primary, string secondary)

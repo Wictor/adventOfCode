@@ -5,7 +5,7 @@ namespace AdventOfCode._2021.Solutions
 {
     public class Day02
     {
-        public static void PartOne(string[] data)
+        public static string PartOne(string[] data)
         {
             var x = 0;
             var y = 0;
@@ -29,10 +29,10 @@ namespace AdventOfCode._2021.Solutions
                 }
             }
 
-            Console.WriteLine(x * y);
+            return (x * y).ToString();
         }
 
-        public static void PartTwo(string[] data)
+        public static string PartTwo(string[] data)
         {
             var horizontal = 0;
             var depth = 0;
@@ -58,7 +58,7 @@ namespace AdventOfCode._2021.Solutions
                 }
             }
 
-            Console.WriteLine(horizontal * depth);
+            return (horizontal * depth).ToString();
         }
     }
 }

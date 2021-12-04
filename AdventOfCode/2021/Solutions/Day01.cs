@@ -5,7 +5,7 @@ namespace AdventOfCode._2021.Solutions
 {
     class Day01
     {
-        public static void PartOne(string[] input)
+        public static string PartOne(string[] input)
         {
             var intInput = Array.ConvertAll(input, int.Parse);
             var increments = 0;
@@ -15,10 +15,10 @@ namespace AdventOfCode._2021.Solutions
                 increments = intInput[i] > intInput[i - 1] ? increments + 1 : increments;
             }
 
-            Console.WriteLine(increments);
+            return increments.ToString();
         }
 
-        public static void PartTwo(string[] input)
+        public static string PartTwo(string[] input)
         {
             var intInput = Array.ConvertAll(input, int.Parse);
             var increments = 0;
@@ -31,7 +31,7 @@ namespace AdventOfCode._2021.Solutions
                 increments = firstSum < secondSum ? increments + 1 : increments;
             }
 
-            Console.WriteLine(increments);
+            return increments.ToString();
         }
     }
 }
