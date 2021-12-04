@@ -30,7 +30,7 @@ namespace AdventOfCode.Solutions
                 }
             }
 
-            Console.WriteLine("Position:" + x * y);
+            Console.WriteLine(x * y);
         }
 
         public static void PartTwo(string[] data)
@@ -59,7 +59,7 @@ namespace AdventOfCode.Solutions
                 }
             }
 
-            Console.WriteLine("Position:" + horizontal * depth);
+            Console.WriteLine(horizontal * depth);
         }
     }
 }
