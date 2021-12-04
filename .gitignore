@@ -3,3 +3,5 @@
 AdventOfCode/bin/
 AdventOfCode/obj/
 global.json
+AdventOfCode.sln
+AdventOfCode/AdventOfCode.csproj
