@@ -41,8 +41,8 @@ def part_2(plays):
 def day2_solution():
     input_file = open('Input/day02.txt', 'r')
     input = input_file.read().split('\n')
-    # Largest calorie source
+    # Half-finished elf tactic
     print(part_1(input))
 
-    # Sum of the three largest calorie sources
+    # Finished elf tactic
     print(part_2(input))
