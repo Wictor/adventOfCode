@@ -1,20 +1,16 @@
-def day01part01(file_input):
-    for elf in file_input:
-        elf_array = elf.split('\n')
-        elf_sum = sum(int(i) for i in elf_array)
-        file_input.remove(elf)
-        file_input.insert(0, elf_sum)
+input_file = open('Input/day01.txt', 'r')
+calories = []
 
-    file_input.sort(reverse=True)
-    return file_input[0]
+for elf in input_file.read().split('\n\n'):
+    calories.append(sum(int(i) for i in elf.split('\n') if i != ""))
+    # calories.insert(0, elf_sum)
+
+calories.sort(reverse=True)
 
 
-def day01part02(file_input):
-    for elf in file_input:
-        elf_array = elf.split('\n')
-        elf_sum = sum(int(i) for i in elf_array)
-        file_input.remove(elf)
-        file_input.insert(0, elf_sum)
+def day1_solution():
+    # Largest calorie source
+    print(calories[0])
 
-    file_input.sort(reverse=True)
-    return file_input[0] + file_input[1] + file_input[2]
+    # Sum of the three largest calorie sources
+    print(calories[0] + calories[1] + calories[2])

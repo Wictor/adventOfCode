@@ -1,7 +1,10 @@
-from Helper.fileReader import *
 from Solution.day01 import *
+from Solution.day02 import *
 
-filename = 'Input/day01.txt'
+day02 = 'Input/day02.txt'
 
-print(day01part01(filereader(filename).split('\n\n')))
-print(day01part02(filereader(filename).split('\n\n')))
+# Day 01
+day1_solution()
+
+# Day 02
+day2_solution()
