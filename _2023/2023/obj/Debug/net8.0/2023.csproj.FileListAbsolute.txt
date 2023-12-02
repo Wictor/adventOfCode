@@ -1,0 +1,15 @@
+D:\Coding\adventOfCode\_2023\2023\bin\Debug\net8.0\2023.exe
+D:\Coding\adventOfCode\_2023\2023\bin\Debug\net8.0\2023.deps.json
+D:\Coding\adventOfCode\_2023\2023\bin\Debug\net8.0\2023.runtimeconfig.json
+D:\Coding\adventOfCode\_2023\2023\bin\Debug\net8.0\2023.dll
+D:\Coding\adventOfCode\_2023\2023\bin\Debug\net8.0\2023.pdb
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.AssemblyInfoInputs.cache
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.AssemblyInfo.cs
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.csproj.CoreCompileInputs.cache
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.sourcelink.json
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.dll
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\refint\2023.dll
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.pdb
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\2023.genruntimeconfig.cache
+D:\Coding\adventOfCode\_2023\2023\obj\Debug\net8.0\ref\2023.dll
