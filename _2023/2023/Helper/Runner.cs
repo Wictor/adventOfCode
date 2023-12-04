@@ -20,6 +20,16 @@
                         ? Solutions.Day02.PartOne(File.ReadAllLines(path))
                         : Solutions.Day02.PartTwo(File.ReadAllLines(path));
                     break;
+                case 03:
+                    result = part == 1
+                        ? Solutions.Day03.PartOne(File.ReadAllLines(path))
+                        : Solutions.Day03.PartTwo(File.ReadAllLines(path));
+                    break;
+                case 04:
+                    result = part == 1
+                        ? Solutions.Day04.PartOne(File.ReadAllLines(path))
+                        : Solutions.Day04.PartTwo(File.ReadAllLines(path));
+                    break;
                 default:
                     result = "not yet implemented";
                     break;
