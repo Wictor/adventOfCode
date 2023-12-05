@@ -4,7 +4,7 @@ namespace _2023 {
     class Program {
         static void Main(string[] args)
         {
-            Runner.PuzzleSelector(04, 1);
+            Runner.PuzzleSelector(04, 2);
         }
     }
 }
